@@ -8,22 +8,22 @@ import org.testng.annotations.BeforeMethod;
 import pages.LoginPage;
 import utils.CapabilitiesGenerator;
 
-    public class BaseTest {
-        WebDriver driver;
-        LoginPage loginPage;
+public class BaseTest {
+    WebDriver driver;
+    LoginPage loginPage;
 
-        @BeforeMethod
-        public void setUp(ITestContext context) {
-            driver = new ChromeDriver(CapabilitiesGenerator.getChromeOptions());
-            loginPage = new LoginPage(driver) {
-                @Override
-                public LoginPage isPageOpened() {
-                    return null;
-                }
+    @BeforeMethod
+    public void setUp(ITestContext context) {
+        driver = new ChromeDriver(CapabilitiesGenerator.getChromeOptions());
+        loginPage = new LoginPage(driver) {
+            @Override
+            public LoginPage isPageOpened() {
+                return null;
+            }
 
-                public void login(ChromeOptions chromeOptions) {
+            public void login(ChromeOptions chromeOptions) {
 
-                }
-            };
-        }
+            }
+        };
     }
+}
