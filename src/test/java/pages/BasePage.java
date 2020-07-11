@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class BasePage {
@@ -15,9 +14,6 @@ public abstract class BasePage {
     }
 
     protected abstract BasePage openPage();
-    protected abstract BasePage isPageOpened();
-
-
-    public abstract void login(ChromeOptions chromeOptions);
+    protected abstract LoginPage isPageOpened();
 
 }

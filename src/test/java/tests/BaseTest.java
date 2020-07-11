@@ -8,7 +8,6 @@ import org.testng.annotations.BeforeMethod;
 import pages.LoginPage;
 import utils.CapabilitiesGenerator;
 
-
     public class BaseTest {
         WebDriver driver;
         LoginPage loginPage;
@@ -22,7 +21,6 @@ import utils.CapabilitiesGenerator;
                     return null;
                 }
 
-                @Override
                 public void login(ChromeOptions chromeOptions) {
 
                 }

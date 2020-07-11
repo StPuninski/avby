@@ -4,14 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-//   @log4j2
 public abstract class LoginPage extends BasePage{
 
     private static final String LOGIN_URL = "https://av.by/login";
     private static final By USERNAME_INPUT = By.id("login");
     private static final By PASSWORD_INPUT = By.id("password");
     private static final By LOGIN_BUTTON = By.xpath("//button[@class='button button--action']");
-
 
     public LoginPage(WebDriver driver) {
         super(driver);
